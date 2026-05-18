@@ -18,26 +18,31 @@ const TempInput = () => {
 
   return (
     <>
-      <div className="text-center mt-40 ">
+      <div className="flex items-center justify-center">
 
-        <div className="flex items-center justify-center gap-2">
-          <h1  className="text-xl">Temperature Calculator</h1>
-          <ThermometerIcon temp={parseFloat(temp)} />
-        </div>
+        <div className="border rounded-xl p-8 w-fit shadow-sm text-center mt-40 ">
 
-        <h3 className="mt-2">The temperature in Celsius is {temp || "___"} and in Fahrenheit is {toFahrenheit(temp) || "___"}</h3>
+          <div className="flex items-center justify-center gap-2">
+            <h1  className="text-xl">Temperature Calculator</h1>
+            <ThermometerIcon temp={parseFloat(temp)} />
+          </div>
 
-        <div className="text-center mt-4">
-          <input
-            type="number"
-            className="border px-4 py-2"
-            placeholder="Enter Temperature"
-            value={temp}
-            onChange={tempChange}
-          />
+          <h3 className="mt-2">The temperature in Celsius is {temp || "___"} and in Fahrenheit is {toFahrenheit(temp) || "___"}</h3>
+
+          <div className="text-center mt-4">
+            <input
+              type="number"
+              className="border px-4 py-2"
+              placeholder="Enter Temperature"
+              value={temp}
+              onChange={tempChange}
+            />
+          </div>
+
         </div>
 
       </div>
+
     </>
   )
 }
