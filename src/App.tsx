@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <Layout addClasses="bg-gray-200">
+      <Layout addClasses="bg-gray-100">
         <TempConverter />
       </Layout>
     </>
