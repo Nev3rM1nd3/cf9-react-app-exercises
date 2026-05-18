@@ -1,9 +1,9 @@
-interface TemmpResultsProps {
+interface TempResultsProps {
   temp: string;
   fahrenheit: string;
 }
 
-const TempResults = ({temp, fahrenheit}: TemmpResultsProps) => {
+const TempResults = ({temp, fahrenheit}: TempResultsProps) => {
 
   return (
     <>
