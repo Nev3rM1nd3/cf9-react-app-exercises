@@ -1,6 +1,7 @@
 import {useState} from "react";
 // import Thermometer from "../assets/Thermometer.svg";
 import ThermometerIcon from "./ThermometerIcon.tsx";
+import TempResults from "./TempResults.tsx";
 
 
 const TempConverter = () => {
@@ -27,7 +28,7 @@ const TempConverter = () => {
             <ThermometerIcon temp={parseFloat(temp)} />
           </div>
 
-          <h3 className="mt-2">The temperature in Celsius is {temp || "___"} and in Fahrenheit is {toFahrenheit(temp) || "___"}</h3>
+          <TempResults temp={temp} fahrenheit={toFahrenheit(temp)} />
 
           <div className="text-center mt-4">
             <input
