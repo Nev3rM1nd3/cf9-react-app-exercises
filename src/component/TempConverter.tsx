@@ -21,7 +21,7 @@ const TempConverter = () => {
     <>
       <div className="flex items-center justify-center">
 
-        <div className="border rounded-xl p-8 w-fit shadow-sm text-center mt-40 ">
+        <div className="border rounded-xl p-8 w-fit shadow-sm text-center mt-25 ">
 
           <div className="flex items-center justify-center gap-2">
             <h1  className="text-xl">Temperature Calculator</h1>
