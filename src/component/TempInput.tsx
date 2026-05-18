@@ -1,5 +1,6 @@
 import {useState} from "react";
-import Thermometer from "../assets/Thermometer.svg";
+// import Thermometer from "../assets/Thermometer.svg";
+import ThermometerIcon from "./ThermometerIcon.tsx";
 
 
 const TempInput = () => {
@@ -21,14 +22,14 @@ const TempInput = () => {
 
         <div className="flex items-center justify-center gap-2">
           <h1  className="text-xl">Temperature Calculator</h1>
-          <img src={Thermometer} alt="icon" className="w-5 h-5" />
+          <ThermometerIcon temp={parseFloat(temp)} />
         </div>
 
         <h3 className="mt-2">The temperature in Celsius is {temp || "___"} and in Fahrenheit is {toFahrenheit(temp) || "___"}</h3>
 
         <div className="text-center mt-4">
           <input
-            type="text"
+            type="number"
             className="border px-4 py-2"
             placeholder="Enter Temperature"
             value={temp}
