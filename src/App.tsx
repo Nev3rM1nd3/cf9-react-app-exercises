@@ -1,11 +1,11 @@
-import TempInput from "./component/TempInput.tsx";
+import TempConverter from "./component/TempConverter.tsx";
 
 
 function App() {
 
   return (
     <>
-      <TempInput />
+      <TempConverter />
     </>
   )
 }

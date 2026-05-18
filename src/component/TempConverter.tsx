@@ -3,7 +3,7 @@ import {useState} from "react";
 import ThermometerIcon from "./ThermometerIcon.tsx";
 
 
-const TempInput = () => {
+const TempConverter = () => {
   const [temp, setTemp] = useState("");
 
   const tempChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -46,4 +46,4 @@ const TempInput = () => {
     </>
   )
 }
-export default TempInput;
+export default TempConverter;
