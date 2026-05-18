@@ -8,7 +8,7 @@ const TempResults = ({temp, fahrenheit}: TempResultsProps) => {
   return (
     <>
       <h3 className="mt-2">
-        The temperature in Celsius is {temp || "___"} and in Fahrenheit is {fahrenheit || "___"}
+        {temp || "___"} degrees Celsius are {fahrenheit || "___"} in Fahrenheit
       </h3>
     </>
   );
